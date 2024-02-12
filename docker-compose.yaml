@@ -1,0 +1,41 @@
+image: maven:3.6.3-openjdk-17-slim
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build and Test
+          services:
+            - postgres
+          caches:
+            - maven
+          script:
+            #- mvn -B verify
+            - mvn --version
+  #    - step:
+  #        name: Dockerize and Push
+  #        image: atlassian/default-image:latest
+  #        services:
+   #         - docker
+    #      script:
+     #       #- cd application-folder
+      #      # creates variables (image name)
+       #     - export IMAGE_NAME=elephant-app
+        #    # builds docker image from a local dockerfile
+        #    - docker build --platform=$TARGET_PLATFORM -t $IMAGE_NAME .
+         #   # tags image as a way to id it by the timestamp
+         #   - docker tag $IMAGE_NAME $REMOTE_IMAGE_NAME:latest
+          #  # authenticate with the Docker Hub registry
+         #   - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
+          #  # push image to Docker Hub registry
+           # - docker push $REMOTE_IMAGE_NAME:latest
+#definitions:
+ # services:
+  #  docker:
+   #   memory: 2048
+    #postgres:
+     # image: postgres
+      #variables:
+       # POSTGRES_DB: elephantTest
+        #POSTGRES_USER: admin
+        #POSTGRES_PASSWORD: admin
