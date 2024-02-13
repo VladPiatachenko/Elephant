@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<ruleset name="MyPMDRules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd"
+         xsi:noNamespaceSchemaLocation="http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <!-- Best Practices -->
+    <rule ref="category/java/bestpractices.xml/AvoidStringBufferField"/>
+    <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP"/>
+    <rule ref="category/java/bestpractices.xml/UseTryWithResources"/>
+
+    <!-- Code Style -->
+    <rule ref="category/java/codestyle.xml/AvoidFinalLocalVariable"/>
+    <rule ref="category/java/codestyle.xml/AvoidFinalParameters"/>
+    <rule ref="category/java/codestyle.xml/AvoidPrefixingMethodParameters"/>
+    <rule ref="category/java/codestyle.xml/CommentDefaultAccessModifier"/>
+    <rule ref="category/java/codestyle.xml/CommentRequired"/>
+    <rule ref="category/java/codestyle.xml/CommentsIndentation"/>
+    <rule ref="category/java/codestyle.xml/DefaultPackage"/>
+    <rule ref="category/java/codestyle.xml/GenericsNaming"/>
+    <rule ref="category/java/codestyle.xml/MethodArgumentCouldBeFinal"/>
+    <rule ref="category/java/codestyle.xml/ShortVariable"/>
+
+    <!-- Error Prone -->
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyIfStmt"/>
+    <rule ref="category/java/errorprone.xml/EmptyWhileStmt"/>
+    <rule ref="category/java/errorprone.xml/ExtendsObject"/>
+    <rule ref="category/java/errorprone.xml/UnconditionalIfStatement"/>
+
+    <!-- Import Statement -->
+    <rule ref="category/java/import.xml/DuplicateImports"/>
+    <rule ref="category/java/import.xml/UnnecessaryFullyQualifiedName"/>
+    <rule ref="category/java/import.xml/UnnecessaryImport"/>
+
+    <!-- Naming Conventions -->
+    <rule ref="category/java/naming.xml/AbstractNaming"/>
+    <rule ref="category/java/naming.xml/BooleanGetMethodName"/>
+    <rule ref="category/java/naming.xml/FieldDeclarationsShouldBeAtStartOfClass"/>
+    <rule ref="category/java/naming.xml/MethodNamingConventions"/>
+    <rule ref="category/java/naming.xml/PackageCase"/>
+    <rule ref="category/java/naming.xml/ShortClassName"/>
+    <rule ref="category/java/naming.xml/ShortMethodName"/>
+    <rule ref="category/java/naming.xml/ShortVariable"/>
+
+    <!-- Design -->
+    <rule ref="category/java/design.xml/AccessorMethodGeneration"/>
+    <rule ref="category/java/design.xml/AvoidDollarSigns"/>
+    <rule ref="category/java/design.xml/AvoidThrowingRawExceptionTypes"/>
+    <rule ref="category/java/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal"/>
+    <rule ref="category/java/design.xml/CloseResource"/>
+    <rule ref="category/java/design.xml/CollapsibleIfStatements"/>
+    <rule ref="category/java/design.xml/ConfusingTernary"/>
+    <rule ref="category/java/design.xml/CyclomaticComplexity"/>
+    <rule ref="category/java/design.xml/DataClass"/>
+    <rule ref="category/java/design.xml/ExcessiveClassLength"/>
+    <rule ref="category/java/design.xml/ExcessiveMethodLength"/>
+    <rule ref="category/java/design.xml/ExcessiveParameterList"/>
+    <rule ref="category/java/design.xml/ExcessivePublicCount"/>
+    <rule ref="category/java/design.xml/ExcessiveReturns"/>
+    <rule ref="category/java/design.xml/ExcessiveStaticImports"/>
+    <rule ref="category/java/design.xml/ForLoopCanBeForeach"/>
+    <rule ref="category/java/design.xml/GodClass"/>
+    <rule ref="category/java/design.xml/HiddenField"/>
+    <rule ref="category/java/design.xml/HiddenField"/>
+    <rule ref="category/java/design.xml/IfStatementWithTooManyTargets"/>
+    <rule ref="category/java/design.xml/LogicInversion"/>
+    <rule ref="category/java/design.xml/MissingBreakInSwitch"/>
+    <rule ref="category/java/design.xml/NcssConstructorCount"/>
+    <rule ref="category/java/design.xml/NcssCount"/>
+    <rule ref="category/java/design.xml/NestedIfDepth"/>
+    <rule ref="category/java/design.xml/NestedTryDepth"/>
+    <rule ref="category/java/design.xml/NpathComplexity"/>
+    <rule ref="category/java/design.xml/ReplaceVectorWithList"/>
+    <rule ref="category/java/design.xml/TooManyFields"/>
+    <rule ref="category/java/design.xml/TooManyMethods"/>
+    <rule ref="category/java/design.xml/TooManyStaticImports"/>
+    <rule ref="category/java/design.xml/UseUtilityClass"/>
+
+</ruleset>
